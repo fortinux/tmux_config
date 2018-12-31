@@ -10,8 +10,8 @@ Instrucciones:
 
 2.- Darle permisos de ejecución con 	
 
-  	chmod 755 devtmux2	
+  	chmod 755 devtmux	
 	
 3.- Ejecutarlo con	
 
- 	 ./devtmux2	
+ 	 ./devtmux	
