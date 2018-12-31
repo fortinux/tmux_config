@@ -1,0 +1,12 @@
+#!/bin/sh
+# @fortinux
+# Creamos una nueva sesión en Tmux
+# Iniciamos tail con el log del sistema
+# Dividimos la ventana verticalmente y listamos las vms
+# Dividimos la ventana horizontalmente e iniciamos htop
+tmux new-session \; \
+send-keys 'tail -f /var/log/syslog' C-m \; \
+split-window -v -p 45 \; \
+send-keys 'lxc list' C-m \; \
+split-window -h -p 55 \; \
+send-keys 'htop' C-m \;
